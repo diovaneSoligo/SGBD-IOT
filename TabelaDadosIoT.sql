@@ -1,6 +1,7 @@
 ﻿create table dispositivos(
-	id_disp int not null,
-	nome varchar(50),
+	id_disp int not null, 	/* ID do dispositivo*/
+	nome varchar(50),	/* nome referencia tomada*/
+	estado int not null,	/* 1 ligado - 0 desligado*/
 	primary key (id_disp)
 );
 
@@ -15,3 +16,4 @@ create table dados(
 	data_hora timestamp(0),
 	foreign key (id_disp) references dispositivos (id_disp)
 );
+
