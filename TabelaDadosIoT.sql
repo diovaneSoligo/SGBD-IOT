@@ -30,8 +30,11 @@ select *from usuario
 
 select *from dispositivos where usuario = 1 order by id_disp
 
+DELETE FROM dispositivos where id_disp = 5
+
 update dispositivos set ip_disp='192.168.90.119' where id_disp = 1
 
+update dispositivos set estado=1 where id_disp = 1;
 
 select *from CURRENT_TIME(1)
 insert into usuario(USUARIO) values(1);
