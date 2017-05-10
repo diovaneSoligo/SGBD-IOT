@@ -30,6 +30,8 @@ select *from usuario
 
 select *from dispositivos where usuario = 1 order by id_disp
 
+select *from dispositivos where id_disp = 1 and ip_disp = '192.168.90.119'
+
 DELETE FROM dispositivos where id_disp = 5
 
 update dispositivos set ip_disp='192.168.90.119' where id_disp = 1
